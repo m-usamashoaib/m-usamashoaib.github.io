@@ -256,7 +256,7 @@ section.alt { background: var(--bg-alt); }
 
 /* ===== Responsive ===== */
 @media (max-width: 900px) {
-  .hero-inner, .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+  .hero-inner, .about-grid, .contact-grid { grid-template-columns: minmax(0, 1fr); gap: 40px; }
   section { padding: 72px 0; }
 }
 @media (max-width: 760px) {
@@ -269,5 +269,10 @@ section.alt { background: var(--bg-alt); }
   .nav-links.open { max-height: 320px; }
   .nav-links a { padding: 14px 4%; border-top: 1px solid var(--border); }
   .contact-form .row { grid-template-columns: 1fr; }
-  .projects-grid { grid-template-columns: 1fr; }
+  .projects-grid { grid-template-columns: minmax(0, 1fr); }
+  .code-window pre { font-size: 0.75rem; padding: 14px 16px; }
+  .stats { gap: 8px; }
+  .stat { padding: 12px 6px; }
+  .stat b { font-size: 1.3rem; }
+  .cta-row .btn { padding: 11px 16px; }
 }

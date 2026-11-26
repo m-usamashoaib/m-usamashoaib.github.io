@@ -57,8 +57,23 @@ const PORTFOLIO = {
     { icon: "⚡", title: "Performance & maintenance", text: "Speed up slow APIs and queries, fix bugs, and modernise existing React/Node codebases.", price: "" },
   ],
 
-  // Client projects built at PureLogics. Add live/code links where you're allowed to share them.
+  // Own open-source projects first, then client projects built at PureLogics.
   projects: [
+    {
+      title: "LaunchKit: SaaS Starter with Stripe",
+      emoji: "🚀",
+      image: "images/launchkit.jpg",
+      category: "Open source",
+      featured: true,
+      problem: "Every SaaS needs the same hard parts (auth, subscriptions, plan limits, an admin view) before any real product work can start.",
+      solution: "Built an open-source starter with Next.js 16 and TypeScript: Auth.js login, Stripe Checkout and billing portal, signature-verified webhooks, server-side Pro gating and an admin dashboard with MRR.",
+      result: "Live demo with real Stripe test-mode payments; a new SaaS can go from clone to taking payments in an afternoon.",
+      tech: ["Next.js 16", "TypeScript", "MongoDB", "Auth.js", "Stripe", "Tailwind CSS"],
+      links: [
+        { label: "Live demo", url: "https://launchkit-ten-delta.vercel.app/" },
+        { label: "Source code", url: "https://github.com/m-usamashoaib/launchkit" },
+      ],
+    },
     {
       title: "Highland Cabinetry",
       emoji: "🏠",

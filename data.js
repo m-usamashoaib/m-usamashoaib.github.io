@@ -136,13 +136,13 @@ const PORTFOLIO = {
     {
       title: "Audio Transcription & Insights",
       emoji: "🎙️",
-      image: "images/nabl.jpg",
+      image: "",
       category: "AI",
       problem: "Teams spent hours manually transcribing and summarising recordings.",
       solution: "Built the React/Redux front-end for secure login, audio upload and transcript editing, on top of a Python backend using OpenAI Whisper.",
       result: "Uploads become transcripts automatically, with topics, insights and questions pulled out.",
       tech: ["React.js", "Redux", "OpenAI Whisper", "Python API"],
-      links: [{ label: "Visit live site", url: "https://www.nabl.ai/" }],
+      live: "",
       code: "",
     },
     {

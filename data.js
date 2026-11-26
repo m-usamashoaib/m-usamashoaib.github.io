@@ -176,6 +176,21 @@ const PORTFOLIO = {
       code: "",
     },
     {
+      title: "NFT Social Platform: Final Year Project",
+      emoji: "🖼️",
+      image: "images/nft-social.jpg",
+      category: "Full-stack",
+      problem: "Final-year project for my BS Computer Science at GC University Lahore: one platform where creators share their work, build a following and sell it as NFTs.",
+      solution: "In a 2-person team, I built most of “Auctioneer's Hub”: a Node.js/Express/MongoDB API (users, posts, stories, notifications, chat, NFTs and collections) and two React apps: a social feed with comments, reactions, video and messaging, and an NFT marketplace with collections, bidding and a wallet page (NFTs stored off-chain). The UI is partly based on templates.",
+      result: "Delivered a complete social network plus marketplace as my degree's final-year project, from API design to two connected front-ends.",
+      tech: ["React", "Node.js", "Express", "MongoDB", "JWT", "Material UI", "Recoil"],
+      links: [
+        { label: "Server code", url: "https://github.com/m-usamashoaib/socialApp-server" },
+        { label: "Social app", url: "https://github.com/m-usamashoaib/socialApp-client" },
+        { label: "Marketplace", url: "https://github.com/m-usamashoaib/nft-marketplace" },
+      ],
+    },
+    {
       title: "RideHail: Ride-hailing App (MERN)",
       emoji: "🚗",
       image: "images/ridehail.jpg",

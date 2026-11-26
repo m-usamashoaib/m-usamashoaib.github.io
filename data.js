@@ -185,7 +185,7 @@ const PORTFOLIO = {
       result: "A fully functional ride-sharing web app covering the core booking-to-drop-off flow.",
       tech: ["React", "Node.js", "MongoDB", "Express", "Google Maps API", "Socket.io"],
       live: "",
-      code: "",
+      code: "https://github.com/m-usamashoaib/ride-hailing-app",
     },
   ],
 

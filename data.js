@@ -181,7 +181,7 @@ const PORTFOLIO = {
       image: "",
       category: "Full-stack",
       problem: "Internship challenge: build a working ride-hailing app end to end.",
-      solution: "Built a full MERN app with ride booking, live driver tracking, ride history and email notifications, using Google Maps APIs for locations and routes.",
+      solution: "Built a full MERN app with ride booking, real-time ride requests and status updates over Socket.io, fare estimates, driver ratings, ride history and email notifications, using Google Maps APIs for routes.",
       result: "A fully functional ride-sharing web app covering the core booking-to-drop-off flow.",
       tech: ["React", "Node.js", "MongoDB", "Express", "Google Maps API", "Socket.io"],
       live: "",

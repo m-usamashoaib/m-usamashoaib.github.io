@@ -75,6 +75,21 @@ const PORTFOLIO = {
       ],
     },
     {
+      title: "StockSync: Shopify ↔ Etsy Inventory Sync",
+      emoji: "🔄",
+      image: "images/stocksync.jpg",
+      category: "Open source",
+      featured: true,
+      problem: "Sellers on several marketplaces oversell when a sale on one channel doesn't reach the others in time, especially under simultaneous sales, rate limits and missed webhooks.",
+      solution: "Built a real-time sync engine: atomic stock deltas with compare-and-swap writes, a BullMQ queue with backoff and 429-aware rescheduling, HMAC-verified Shopify webhooks, and a reconcile loop that repairs drift.",
+      result: "Tested against a real Shopify store (updates in ~400 ms) and with a test suite for concurrency and failure cases. The live demo includes a chaos mode that injects API errors.",
+      tech: ["Node.js", "TypeScript", "BullMQ", "Redis", "MongoDB", "Shopify GraphQL", "React", "Vitest"],
+      links: [
+        { label: "Live demo", url: "https://stocksync-1i1y.onrender.com/" },
+        { label: "Source code", url: "https://github.com/m-usamashoaib/stocksync" },
+      ],
+    },
+    {
       title: "Highland Cabinetry",
       emoji: "🏠",
       image: "images/highland-cabinetry.jpg",

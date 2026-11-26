@@ -176,9 +176,9 @@ const PORTFOLIO = {
       code: "",
     },
     {
-      title: "Ride-hailing App (MERN)",
+      title: "RideHail: Ride-hailing App (MERN)",
       emoji: "🚗",
-      image: "",
+      image: "images/ridehail.jpg",
       category: "Full-stack",
       problem: "Internship challenge: build a working ride-hailing app end to end.",
       solution: "Built a full MERN app with ride booking, real-time ride requests and status updates over Socket.io, fare estimates, driver ratings, ride history and email notifications, using Google Maps APIs for routes.",

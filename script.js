@@ -95,10 +95,14 @@
         ? `<img src="${esc(pr.image)}" alt="${esc(pr.title)} screenshot" loading="lazy" />`
         : `<span aria-hidden="true">${pr.emoji || "💻"}</span>`;
       const bg = pr.image ? "" : `style="background:linear-gradient(135deg,hsl(${h} 70% 50% / .22),hsl(${h + 40} 70% 50% / .08))"`;
-      const links = [
-        pr.live ? `<a href="${esc(pr.live)}" target="_blank" rel="noopener">Live demo ↗</a>` : "",
-        pr.code ? `<a href="${esc(pr.code)}" target="_blank" rel="noopener">Source code ↗</a>` : "",
-      ].join("");
+      const linkList = [
+        ...(pr.links || []),
+        ...(pr.live ? [{ label: "Live demo", url: pr.live }] : []),
+        ...(pr.code ? [{ label: "Source code", url: pr.code }] : []),
+      ];
+      const links = linkList
+        .map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`)
+        .join("");
       return `<article class="card project reveal" data-cat="${esc(pr.category)}">
         <div class="thumb" ${bg}>${thumb}${pr.featured ? '<span class="badge">Featured</span>' : ""}</div>
         <div class="body">

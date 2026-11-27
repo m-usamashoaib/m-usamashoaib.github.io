@@ -47,6 +47,7 @@ const PORTFOLIO = {
     Frontend: ["React.js", "Next.js", "TypeScript", "JavaScript", "Redux Toolkit", "Vue 3", "Tailwind CSS", "Material UI", "Konva.js", "Three.js"],
     Backend: ["Node.js", "Express.js", "REST APIs", "Socket.io", "Redis / Bull queues", "PHP", "Laravel", "OAuth2", "Firebase"],
     "Database & CMS": ["MongoDB", "MySQL", "Sequelize", "WordPress", "WooCommerce"],
+    "AI & LLMs": ["RAG", "Google Gemini API", "LLM integration", "Embeddings", "Vector search (MongoDB Atlas)", "Prompt design"],
     "Integrations & Cloud": ["Stripe", "Plaid", "Shopify", "Etsy", "Printify", "AWS (S3, SQS, Cognito)", "Docker", "CI/CD", "Git"],
   },
 
@@ -87,6 +88,21 @@ const PORTFOLIO = {
       links: [
         { label: "Live demo", url: "https://stocksync-1i1y.onrender.com/" },
         { label: "Source code", url: "https://github.com/m-usamashoaib/stocksync" },
+      ],
+    },
+    {
+      title: "Cited: Ask a PDF, Get Page-Cited Answers (RAG)",
+      emoji: "📄",
+      image: "images/cited.jpg",
+      category: "Open source",
+      featured: true,
+      problem: "AI chat over documents is only useful if you can trust it, and most tools give fluent answers with no way to check where they came from.",
+      solution: "Built a retrieval-augmented generation (RAG) app: page-aware chunking, Gemini embeddings and MongoDB Atlas Vector Search, streamed answers that must cite numbered excerpts, and a PDF viewer that opens on the cited page.",
+      result: "Answers only from the document, says so when the answer isn't there, and handles follow-up questions. The live demo runs entirely on free tiers with usage caps and auto-deleting uploads.",
+      tech: ["Next.js 16", "TypeScript", "Google Gemini", "MongoDB Atlas Vector Search", "RAG", "Tailwind CSS"],
+      links: [
+        { label: "Live demo", url: "https://cited-green.vercel.app/" },
+        { label: "Source code", url: "https://github.com/m-usamashoaib/cited" },
       ],
     },
     {

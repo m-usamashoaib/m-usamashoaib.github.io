@@ -40,7 +40,7 @@ const PORTFOLIO = {
 
   about: [
     "I'm a <strong>Software Engineer at PureLogics</strong> in Lahore, where I've grown from intern to engineer over the past four years. I build full-stack products with the <strong>MERN stack</strong>, from REST APIs and data models to responsive React and Next.js front-ends.",
-    "Much of my work is about <strong>connecting systems</strong>: Stripe payments, Shopify checkouts, Etsy and Printify listings, Plaid bank data, ERP and other third-party APIs. I make them work together securely and reliably, and I've cut API response times by up to <strong>30%</strong> through query and endpoint optimisation.",
+    "Much of my work is about <strong>connecting systems</strong>: Stripe payments, Shopify checkouts, Etsy and Printify listings, ERP and other third-party APIs. I make them work together securely and reliably, and I've cut API response times by up to <strong>30%</strong> through query and endpoint optimisation.",
     "Lately I've been building <strong>AI features</strong>, from LLM-powered insights to a RAG app that answers questions about a PDF with page citations, and <strong>custom WordPress themes</strong> that turn AI-built prototypes into sites clients can edit themselves.",
     "I hold a <strong>BS in Computer Science from GC University Lahore</strong>. My team leads and colleagues describe me as a quick learner, a clear communicator and someone who gets tricky problems solved.",
   ],
@@ -56,7 +56,7 @@ const PORTFOLIO = {
   services: [
     { icon: "🚀", title: "SaaS & full-stack apps", text: "End-to-end MERN / Next.js applications with auth, dashboards, admin panels and subscriptions.", price: "" },
     { icon: "🛒", title: "E-commerce development", text: "Custom Shopify apps, product configurators, checkout flows and storefronts that convert.", price: "" },
-    { icon: "🔌", title: "API & third-party integrations", text: "Stripe, Plaid, Shopify, Etsy, Printify, ERP and OAuth2 integrations built to be secure and reliable.", price: "" },
+    { icon: "🔌", title: "API & third-party integrations", text: "Stripe, Shopify, Etsy, Printify, ERP and OAuth2 integrations built to be secure and reliable.", price: "" },
     { icon: "🤖", title: "AI features & RAG", text: "Chat over your documents with source citations, LLM-powered insights and AI workflows added to your existing product.", price: "" },
     { icon: "🧩", title: "WordPress & WooCommerce", text: "Custom themes from a design or prototype, custom post types and WooCommerce stores your team can edit without code.", price: "" },
     { icon: "⚡", title: "Performance & maintenance", text: "Speed up slow APIs and queries, fix bugs, and modernise existing React/Node codebases.", price: "" },
@@ -136,13 +136,13 @@ const PORTFOLIO = {
       code: "",
     },
     {
-      title: "MoneyMate: MX → Plaid Bank-Data Migration",
+      title: "MoneyMate: Budgeting App Maintenance & Support",
       emoji: "🏦",
       image: "images/moneymate.jpg",
       category: "Full-stack",
-      problem: "A live personal and business budgeting app had to switch its bank-data provider from MX to Plaid without changing its 8,500-line budget engine or breaking three subscription tiers.",
-      solution: "On a contracted team, built Plaid Link, token exchange and a signed webhook → AWS SQS → worker pipeline with cursor-based transaction sync and idempotent upserts, mapped Plaid's categories onto the app's 319-category model, fixed relink duplicates, and hardened the API (parameterised queries, validation, CSP).",
-      result: "The core migration shipped in about 10 days of a 7-week plan, with the budget engine untouched.",
+      problem: "A live personal and business budgeting app, with bank data synced through Plaid, needed a developer to own it after its original developer left.",
+      solution: "Took over the project in a handover in September 2026 and provide maintenance and support across the stack: the Node.js/TypeScript API, the React front-end, and the Plaid webhook → AWS SQS → worker pipeline that syncs bank transactions.",
+      result: "The product stays supported, with one developer able to pick up fixes and change requests anywhere in the codebase.",
       tech: ["Node.js", "TypeScript", "Express", "Sequelize", "MySQL", "React", "RTK Query", "Plaid", "AWS SQS", "Cognito"],
       links: [{ label: "Visit live site", url: "https://ehmoneymate.com/" }],
     },
@@ -183,7 +183,7 @@ const PORTFOLIO = {
       ],
     },
     {
-      title: "Name GLO: Custom Neon Designer",
+      title: "GLO Studio: Custom Neon Designer",
       emoji: "💡",
       image: "images/name-glo.jpg",
       category: "E-commerce",
@@ -248,7 +248,7 @@ const PORTFOLIO = {
       image: "",
       category: "Full-stack",
       problem: "Journalists, policy groups and agencies needed one place to explore US society, government, industry and politics through profiles and data dashboards.",
-      solution: "Maintenance and support on an existing React platform: industry and organisation profiles built from JSON in S3, embedded Amazon QuickSight dashboards, AWS Amplify (Cognito) accounts and Stripe-gated subscriber routes.",
+      solution: "Took over the project in a handover in September 2026 and provide maintenance and support on the existing React platform: industry and organisation profiles built from JSON in S3, embedded Amazon QuickSight dashboards, AWS Amplify (Cognito) accounts and Stripe-gated subscriber routes.",
       result: "Kept a data-heavy, AWS-backed product running for its users: setup, configuration and debugging across auth, data and dashboard features.",
       tech: ["React", "Vite", "MUI", "Redux Toolkit", "AWS Amplify", "QuickSight", "S3", "Stripe"],
       links: [{ label: "Web app", url: "https://app.newscopilot.com/" }],
@@ -314,8 +314,9 @@ const PORTFOLIO = {
       points: [
         "Lead full-stack developer on Simply Listed, a live Etsy listing-automation SaaS: Node.js and Redis job queues, real-time progress, Etsy and Printify APIs, and Stripe subscriptions.",
         "Lead WordPress/WooCommerce developer on Kitchen Cabinets Wholesale: custom theme, a React/Three.js 3D kitchen planner with its REST API, and Stripe checkout.",
-        "Delivered fintech, AI and CMS work for clients: an MX → Plaid bank-data migration, LLM-powered front-ends, an AI comic creator, a digital-receipts platform and custom WordPress themes.",
-        "Integrate Stripe, Shopify, Printify, Etsy, Plaid and other APIs over OAuth2 with secure, PCI-compliant payment flows.",
+        "Delivered AI and CMS work for clients: LLM-powered front-ends, an AI comic creator, a digital-receipts platform and custom WordPress themes.",
+        "Took over maintenance and support of two live client products after a developer handover: a Plaid-based budgeting app and a React/AWS research platform.",
+        "Integrate Stripe, Shopify, Printify, Etsy and other APIs over OAuth2 with secure, PCI-compliant payment flows.",
         "Optimised endpoints and database queries, improving response times and stability under load by up to 30%.",
         "Set up CI/CD pipelines, automated testing and code review practices to speed up releases.",
       ],
@@ -326,7 +327,7 @@ const PORTFOLIO = {
       company: "PureLogics, Lahore",
       points: [
         "Built the Node.js and MongoDB backend for AIOMD, a health & fitness platform: role-based auth, partner dashboards, progress tracking and push notifications.",
-        "Built React front-ends with Redux, Tailwind CSS and Material UI, including the Name GLO neon-sign designer with Shopify checkout and a Whisper-powered transcription tool.",
+        "Built React front-ends with Redux, Tailwind CSS and Material UI, including the GLO Studio neon-sign designer with Shopify checkout and a Whisper-powered transcription tool.",
       ],
     },
     {

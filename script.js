@@ -81,6 +81,22 @@
     .map((sv) => `<article class="card reveal"><div class="icon">${sv.icon}</div><h3>${esc(sv.title)}</h3><p>${esc(sv.text)}</p>${sv.price ? `<div class="price">${esc(sv.price)}</div>` : ""}</article>`)
     .join("");
 
+  /* ---------- How I work ---------- */
+  if (!D.process || !D.process.length) $("#process").remove();
+  else {
+    $("#process-steps").innerHTML = D.process
+      .map((st, i) => `<li class="step reveal"><span class="step-n">${String(i + 1).padStart(2, "0")}</span><h3>${esc(st.title)}</h3><p>${esc(st.text)}</p></li>`)
+      .join("");
+  }
+
+  /* ---------- FAQ ---------- */
+  if (!D.faq || !D.faq.length) $("#faq").remove();
+  else {
+    $("#faq-list").innerHTML = D.faq
+      .map((f) => `<details class="faq-item"><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`)
+      .join("");
+  }
+
   /* ---------- Projects + filters ---------- */
   const cats = ["All", ...new Set(D.projects.map((pr) => pr.category))];
   $("#filters").innerHTML = cats

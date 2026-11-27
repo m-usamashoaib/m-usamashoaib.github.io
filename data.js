@@ -62,6 +62,24 @@ const PORTFOLIO = {
     { icon: "⚡", title: "Performance & maintenance", text: "Speed up slow APIs and queries, fix bugs, and modernise existing React/Node codebases.", price: "" },
   ],
 
+  // "How I work": the steps a client goes through, in order
+  process: [
+    { title: "Discovery call", text: "A short call about your goals, users, deadline and budget. I ask the awkward questions early so nothing surprises us later." },
+    { title: "Scope & estimate", text: "You get a written scope with features, milestones and tech choices, plus a fixed price or an hourly estimate. Nothing starts until you agree." },
+    { title: "Build with weekly demos", text: "I build in small milestones. Every week you see a working demo and a short update, so you can change course early instead of at the end." },
+    { title: "Launch & handover", text: "I deploy, hand over the code and docs, and fix any bugs found in the first 14 days for free. After that I can stay on for support." },
+  ],
+
+  // Questions clients ask before getting in touch
+  faq: [
+    { q: "What time zone are you in?", a: "Pakistan (PKT, UTC+5). My hours are flexible, so I can join calls and reply during US working hours, and UK and EU hours overlap easily." },
+    { q: "How do you charge?", a: "Three ways: a fixed price for a clearly scoped project, paid by milestone; hourly for open-ended or ongoing work; or a monthly retainer for regular support and small features. After our first call I'll suggest the one that fits." },
+    { q: "How do we work together and how do I pay?", a: "We sign a direct contract that sets out the scope, milestones and payment terms. You can pay by bank transfer, Payoneer or Wise." },
+    { q: "Who owns the code?", a: "You do. Once the work is paid for, the code, designs and accounts are yours, in your own repository and hosting." },
+    { q: "What happens after launch?", a: "Bugs found in the first 14 days after launch are fixed for free. After that I offer support hourly or on a monthly retainer, whichever suits how often you need changes." },
+    { q: "Can you work on an existing codebase?", a: "Yes. A lot of my work is joining existing React and Node.js products, including live client apps I took over after a developer handover: fixing bugs, speeding things up and adding features without a rewrite." },
+  ],
+
   // Own open-source projects first, then client work, then freelance, university and internship projects.
   projects: [
     {

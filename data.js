@@ -118,14 +118,13 @@ const PORTFOLIO = {
     {
       title: "MoneyMate: MX → Plaid Bank-Data Migration",
       emoji: "🏦",
-      image: "",
+      image: "images/moneymate.jpg",
       category: "Full-stack",
       problem: "A live personal and business budgeting app had to switch its bank-data provider from MX to Plaid without changing its 8,500-line budget engine or breaking three subscription tiers.",
       solution: "On a contracted team, built Plaid Link, token exchange and a signed webhook → AWS SQS → worker pipeline with cursor-based transaction sync and idempotent upserts, mapped Plaid's categories onto the app's 319-category model, fixed relink duplicates, and hardened the API (parameterised queries, validation, CSP).",
       result: "The core migration shipped in about 10 days of a 7-week plan, with the budget engine untouched.",
       tech: ["Node.js", "TypeScript", "Express", "Sequelize", "MySQL", "React", "RTK Query", "Plaid", "AWS SQS", "Cognito"],
-      live: "",
-      code: "",
+      links: [{ label: "Visit live site", url: "https://ehmoneymate.com/" }],
     },
     {
       title: "AuthorsAxis: Custom WordPress Theme",
@@ -221,8 +220,7 @@ const PORTFOLIO = {
       solution: "Maintenance and support on an existing React platform: industry and organisation profiles built from JSON in S3, embedded Amazon QuickSight dashboards, AWS Amplify (Cognito) accounts and Stripe-gated subscriber routes.",
       result: "Kept a data-heavy, AWS-backed product running for its users: setup, configuration and debugging across auth, data and dashboard features.",
       tech: ["React", "Vite", "MUI", "Redux Toolkit", "AWS Amplify", "QuickSight", "S3", "Stripe"],
-      live: "",
-      code: "",
+      links: [{ label: "Web app", url: "https://app.newscopilot.com/" }],
     },
     {
       title: "Audio Transcription & Insights",

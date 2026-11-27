@@ -11,9 +11,10 @@ const PORTFOLIO = {
     "Node.js & API Developer",
     "React / Next.js Developer",
     "E-commerce Integration Specialist",
+    "AI & LLM Integration Developer",
   ],
   tagline:
-    "4+ years building scalable web apps for e-commerce, SaaS and healthcare with Node.js, React, Next.js, MongoDB and TypeScript, plus Stripe, Shopify and Etsy integrations that just work.",
+    "4+ years building scalable web apps for e-commerce, SaaS, fintech and healthcare with Node.js, React, Next.js, MongoDB and TypeScript, plus Stripe, Shopify, Etsy and AI integrations that just work.",
   available: true,
   availabilityText: "Open to freelance projects & new roles",
   location: "Lahore, Pakistan",
@@ -39,26 +40,29 @@ const PORTFOLIO = {
 
   about: [
     "I'm a <strong>Software Engineer at PureLogics</strong> in Lahore, where I've grown from intern to engineer over the past four years. I build full-stack products with the <strong>MERN stack</strong>, from REST APIs and data models to responsive React and Next.js front-ends.",
-    "Much of my work is about <strong>connecting systems</strong>: Stripe payments, Shopify checkouts, Etsy and Printify listings, NetSuite ERP and other third-party APIs. I make them work together securely and reliably, and I've cut API response times by up to <strong>30%</strong> through query and endpoint optimisation.",
+    "Much of my work is about <strong>connecting systems</strong>: Stripe payments, Shopify checkouts, Etsy and Printify listings, Plaid bank data, ERP and other third-party APIs. I make them work together securely and reliably, and I've cut API response times by up to <strong>30%</strong> through query and endpoint optimisation.",
+    "Lately I've been building <strong>AI features</strong>, from LLM-powered insights to a RAG app that answers questions about a PDF with page citations, and <strong>custom WordPress themes</strong> that turn AI-built prototypes into sites clients can edit themselves.",
     "I hold a <strong>BS in Computer Science from GC University Lahore</strong>. My team leads and colleagues describe me as a quick learner, a clear communicator and someone who gets tricky problems solved.",
   ],
 
   skills: {
-    Frontend: ["React.js", "Next.js", "TypeScript", "JavaScript", "Redux Toolkit", "Vue 3", "Tailwind CSS", "Material UI", "Konva.js", "Three.js"],
-    Backend: ["Node.js", "Express.js", "REST APIs", "Socket.io", "Redis / Bull queues", "PHP", "Laravel", "OAuth2", "Firebase"],
-    "Database & CMS": ["MongoDB", "MySQL", "Sequelize", "WordPress", "WooCommerce"],
-    "AI & LLMs": ["RAG", "Google Gemini API", "LLM integration", "Embeddings", "Vector search (MongoDB Atlas)", "Prompt design"],
-    "Integrations & Cloud": ["Stripe", "Plaid", "Shopify", "Etsy", "Printify", "AWS (S3, SQS, Cognito)", "Docker", "CI/CD", "Git"],
+    Frontend: ["React.js", "Next.js", "TypeScript", "JavaScript", "Redux Toolkit", "Vue 3", "Tailwind CSS", "Material UI", "Bootstrap 5", "Konva.js", "Three.js"],
+    Backend: ["Node.js", "Express.js", "REST APIs", "Socket.io", "Redis / BullMQ queues", "JWT / Auth.js", "OAuth2", "PHP", "Laravel", "Firebase"],
+    "Database & CMS": ["MongoDB", "MySQL", "Sequelize", "WordPress (custom themes)", "WooCommerce"],
+    "AI & LLMs": ["RAG", "Google Gemini API", "LLM integration", "Embeddings", "Vector search (MongoDB Atlas)", "Speech-to-text (Whisper)", "Prompt design"],
+    "Integrations & Cloud": ["Stripe", "Plaid", "Shopify", "Etsy", "Printify", "Ecwid", "Google Maps", "AWS (S3, SQS, Cognito, Amplify)", "Docker", "CI/CD", "Vitest", "Git"],
   },
 
   services: [
     { icon: "🚀", title: "SaaS & full-stack apps", text: "End-to-end MERN / Next.js applications with auth, dashboards, admin panels and subscriptions.", price: "" },
     { icon: "🛒", title: "E-commerce development", text: "Custom Shopify apps, product configurators, checkout flows and storefronts that convert.", price: "" },
-    { icon: "🔌", title: "API & third-party integrations", text: "Stripe, Shopify, Etsy, Printify, ERP and OAuth2 integrations built to be secure and reliable.", price: "" },
+    { icon: "🔌", title: "API & third-party integrations", text: "Stripe, Plaid, Shopify, Etsy, Printify, ERP and OAuth2 integrations built to be secure and reliable.", price: "" },
+    { icon: "🤖", title: "AI features & RAG", text: "Chat over your documents with source citations, LLM-powered insights and AI workflows added to your existing product.", price: "" },
+    { icon: "🧩", title: "WordPress & WooCommerce", text: "Custom themes from a design or prototype, custom post types and WooCommerce stores your team can edit without code.", price: "" },
     { icon: "⚡", title: "Performance & maintenance", text: "Speed up slow APIs and queries, fix bugs, and modernise existing React/Node codebases.", price: "" },
   ],
 
-  // Own open-source projects first, then client projects built at PureLogics.
+  // Own open-source projects first, then client work, then freelance, university and internship projects.
   projects: [
     {
       title: "LaunchKit: SaaS Starter with Stripe",
@@ -308,8 +312,10 @@ const PORTFOLIO = {
       role: "Software Engineer",
       company: "PureLogics, Lahore",
       points: [
-        "Build scalable Node.js, Express and MongoDB (TypeScript) back-ends and REST APIs for e-commerce and healthcare products.",
-        "Integrate Stripe, Shopify, Printify, Etsy and other APIs over OAuth2 with secure, PCI-compliant payment flows.",
+        "Lead full-stack developer on Simply Listed, a live Etsy listing-automation SaaS: Node.js and Redis job queues, real-time progress, Etsy and Printify APIs, and Stripe subscriptions.",
+        "Lead WordPress/WooCommerce developer on Kitchen Cabinets Wholesale: custom theme, a REST API for a 3D kitchen planner, and Stripe checkout.",
+        "Delivered fintech, AI and CMS work for clients: an MX → Plaid bank-data migration, LLM-powered front-ends, an AI comic creator, a digital-receipts platform and custom WordPress themes.",
+        "Integrate Stripe, Shopify, Printify, Etsy, Plaid and other APIs over OAuth2 with secure, PCI-compliant payment flows.",
         "Optimised endpoints and database queries, improving response times and stability under load by up to 30%.",
         "Set up CI/CD pipelines, automated testing and code review practices to speed up releases.",
       ],
@@ -319,8 +325,8 @@ const PORTFOLIO = {
       role: "Associate Software Engineer",
       company: "PureLogics, Lahore",
       points: [
-        "Built responsive React front-ends with Redux, Tailwind CSS and Material UI for client products.",
-        "Delivered features for a Shopify neon-sign configurator, a health & fitness app, and a Whisper-powered transcription tool.",
+        "Built the Node.js and MongoDB backend for AIOMD, a health & fitness platform: role-based auth, partner dashboards, progress tracking and push notifications.",
+        "Built React front-ends with Redux, Tailwind CSS and Material UI, including the Name GLO neon-sign designer with Shopify checkout and a Whisper-powered transcription tool.",
       ],
     },
     {

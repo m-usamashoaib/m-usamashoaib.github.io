@@ -154,6 +154,17 @@ const PORTFOLIO = {
       links: [{ label: "Visit live site", url: "https://authorsaxis.com/" }],
     },
     {
+      title: "Ahmad Hamid Building Contracting: Custom WordPress Theme",
+      emoji: "🏗️",
+      image: "images/ahmad-contracting.jpg",
+      category: "WordPress",
+      problem: "A UAE construction company had a design prototyped with an AI app builder, but needed a site its team could update with new services and projects without a developer.",
+      solution: "As sole developer, rebuilt the prototype as a custom WordPress theme: Services and Projects as custom post types, a projects page filtered by sector (commercial, residential, civil and more), a quote request form, a downloadable company profile and cookie consent.",
+      result: "Live site that keeps the premium look of the prototype while the client adds projects and services from the WordPress admin.",
+      tech: ["WordPress", "PHP", "JavaScript", "CSS", "Custom post types", "Contact Form 7"],
+      links: [{ label: "Visit live site", url: "https://ahmadcontracting.com/" }],
+    },
+    {
       title: "MyDataMyDolla (MyDMD): AI-Powered Personal Data Platform",
       emoji: "💎",
       image: "images/mydmd.jpg",

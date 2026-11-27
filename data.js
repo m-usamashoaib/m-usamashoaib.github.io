@@ -41,7 +41,7 @@ const PORTFOLIO = {
   about: [
     "I'm a <strong>Software Engineer at PureLogics</strong> in Lahore, where I've grown from intern to engineer over the past four years. I build full-stack products with the <strong>MERN stack</strong>, from REST APIs and data models to responsive React and Next.js front-ends.",
     "Much of my work is about <strong>connecting systems</strong>: Stripe payments, Shopify checkouts, Etsy and Printify listings, ERP and other third-party APIs. I make them work together securely and reliably, and I've cut API response times by up to <strong>30%</strong> through query and endpoint optimisation.",
-    "Lately I've been building <strong>AI features</strong>, from LLM-powered insights to a RAG app that answers questions about a PDF with page citations, and <strong>custom WordPress themes</strong> that turn AI-built prototypes into sites clients can edit themselves.",
+    "Lately I've been building <strong>AI features</strong>, from LLM-powered insights to a RAG app that answers questions about a PDF with page citations and a shop assistant agent that handles returns and exchanges with the customer's approval, and <strong>custom WordPress themes</strong> that turn AI-built prototypes into sites clients can edit themselves.",
     "I hold a <strong>BS in Computer Science from GC University Lahore</strong>. My team leads and colleagues describe me as a quick learner, a clear communicator and someone who gets tricky problems solved.",
   ],
 
@@ -49,7 +49,7 @@ const PORTFOLIO = {
     Frontend: ["React.js", "Next.js", "TypeScript", "JavaScript", "Redux Toolkit", "Vue 3", "Tailwind CSS", "Material UI", "Bootstrap 5", "Konva.js", "Three.js"],
     Backend: ["Node.js", "Express.js", "REST APIs", "Socket.io", "Redis / BullMQ queues", "JWT / Auth.js", "OAuth2", "PHP", "Laravel", "Firebase"],
     "Database & CMS": ["MongoDB", "MySQL", "Sequelize", "WordPress (custom themes)", "WooCommerce"],
-    "AI & LLMs": ["RAG", "Google Gemini API", "LLM integration", "Embeddings", "Vector search (MongoDB Atlas)", "Speech-to-text (Whisper)", "Prompt design"],
+    "AI & LLMs": ["AI agents", "Function / tool calling", "RAG", "Google Gemini API", "LLM integration", "LLM evals", "Embeddings", "Vector search (MongoDB Atlas)", "Speech-to-text (Whisper)", "Prompt design"],
     "Integrations & Cloud": ["Stripe", "Plaid", "Shopify", "Etsy", "Printify", "Ecwid", "Google Maps", "AWS (S3, SQS, Cognito, Amplify)", "Docker", "CI/CD", "Vitest", "Git"],
   },
 
@@ -57,7 +57,7 @@ const PORTFOLIO = {
     { icon: "🚀", title: "SaaS & full-stack apps", text: "End-to-end MERN / Next.js applications with auth, dashboards, admin panels and subscriptions.", price: "" },
     { icon: "🛒", title: "E-commerce development", text: "Custom Shopify apps, product configurators, checkout flows and storefronts that convert.", price: "" },
     { icon: "🔌", title: "API & third-party integrations", text: "Stripe, Shopify, Etsy, Printify, ERP and OAuth2 integrations built to be secure and reliable.", price: "" },
-    { icon: "🤖", title: "AI features & RAG", text: "Chat over your documents with source citations, LLM-powered insights and AI workflows added to your existing product.", price: "" },
+    { icon: "🤖", title: "AI agents & RAG", text: "Chat over your documents with source citations, and AI assistants that take real actions in your systems (orders, refunds, bookings) with a human approving each one.", price: "" },
     { icon: "🧩", title: "WordPress & WooCommerce", text: "Custom themes from a design or prototype, custom post types and WooCommerce stores your team can edit without code.", price: "" },
     { icon: "⚡", title: "Performance & maintenance", text: "Speed up slow APIs and queries, fix bugs, and modernise existing React/Node codebases.", price: "" },
   ],
@@ -125,6 +125,21 @@ const PORTFOLIO = {
       links: [
         { label: "Live demo", url: "https://cited-green.vercel.app/" },
         { label: "Source code", url: "https://github.com/m-usamashoaib/cited" },
+      ],
+    },
+    {
+      title: "Aisle: AI Shop Assistant That Takes Actions",
+      emoji: "🛍️",
+      image: "images/aisle.jpg",
+      category: "Open source",
+      featured: true,
+      problem: "Store chatbots either just answer FAQs or are given free rein over orders and refunds, which no store owner can trust.",
+      solution: "Built a support agent on Gemini function calling with nine tools for orders, stock, policies, returns, exchanges, cancellations and human handoff. Write tools only propose a change: the customer confirms it, and the store's rules are re-checked in code before anything runs.",
+      result: "Handles order tracking, size swaps and refunds end to end, refuses what the rules don't allow, keeps other customers' orders private, and passes a 10-scenario eval of what it actually does. Includes a store owner view with transcripts and token usage.",
+      tech: ["Next.js 16", "TypeScript", "Google Gemini", "Function calling", "AI agents", "MongoDB", "Zod"],
+      links: [
+        { label: "Live demo", url: "https://aisle-gamma-ruby.vercel.app/" },
+        { label: "Source code", url: "https://github.com/m-usamashoaib/aisle" },
       ],
     },
     {

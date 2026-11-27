@@ -139,6 +139,20 @@ const PORTFOLIO = {
       links: [{ label: "Visit live site", url: "https://authorsaxis.com/" }],
     },
     {
+      title: "MyDataMyDolla (MyDMD): AI-Powered Personal Data Platform",
+      emoji: "💎",
+      image: "images/mydmd.jpg",
+      category: "AI",
+      problem: "People's health, genetic, consumer and lifestyle data is scattered across providers, and they have no say (and get no pay) when companies use it.",
+      solution: "As front-end developer, built the React web app where users bring their data into one private space and manage it, and integrated an LLM to turn that data into AI-powered insights.",
+      result: "Web app live at app.mydatamydolla.com ahead of launch, where users can also choose to share de-identified data through a marketplace and get paid.",
+      tech: ["React", "Vite", "JavaScript", "LLM integration", "REST APIs"],
+      links: [
+        { label: "Visit site", url: "https://mydatamydolla.com/" },
+        { label: "Web app", url: "https://app.mydatamydolla.com/auth/login" },
+      ],
+    },
+    {
       title: "Name GLO: Custom Neon Designer",
       emoji: "💡",
       image: "images/name-glo.jpg",

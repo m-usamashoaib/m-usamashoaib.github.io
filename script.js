@@ -140,8 +140,11 @@
   } else {
     $("#testimonials-grid").innerHTML = D.testimonials
       .map((t) => {
-        const initials = t.name.split(" ").map((w) => w[0]).slice(0, 2).join("");
-        return `<figure class="card quote reveal" style="margin:0"><p>${esc(t.quote)}</p><figcaption class="who"><div class="avatar">${esc(initials)}</div><div><b>${esc(t.name)}</b><span>${esc(t.title)}</span></div></figcaption></figure>`;
+        // A photo if one is set in data.js, otherwise a generic person icon
+        const face = t.photo
+          ? `<img src="${esc(t.photo)}" alt="" loading="lazy" />`
+          : `<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="9" r="4.5"/><path d="M2.5 24c0-5.5 4.3-9 9.5-9s9.5 3.5 9.5 9z"/></svg>`;
+        return `<figure class="card quote reveal" style="margin:0"><p>${esc(t.quote)}</p><figcaption class="who"><div class="avatar">${face}</div><div><b>${esc(t.name)}</b><span>${esc(t.title)}</span></div></figcaption></figure>`;
       })
       .join("");
   }
